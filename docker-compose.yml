@@ -8,3 +8,4 @@ services:
     tty: true        # docker run -t
     build:
       context: .
+    #network_mode: host
