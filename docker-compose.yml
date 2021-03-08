@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  cardano-node:
+    image: diegomgar/cardano-node
+    container_name: cardano-node
+    command: /bin/bash
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    build:
+      context: .
